@@ -43,18 +43,18 @@ public class LinkedMinPQ<T extends Comparable<T>> implements MinPQ<T> {
   // in a level in a binary tree, from right to left.
   // It is recursive: it calls itself in order to get the next level.
   String printThisLevel (Node root ,int level) {
-	StringBuilder s = new StringBuilder();
-        if (root == null) {
-            return s.toString();
-	}
-        if (level == 1) {
-            s.append( root.info.toString());
-	} else if (level > 1) {
-	    s.append( printThisLevel(root.lchild, level-1));
-	    s.append( printThisLevel(root.rchild, level-1));
-	}
-	return s.toString();
+    StringBuilder s = new StringBuilder();
+    if (root == null) {
+      return s.toString();
     }
+    if (level == 1) {
+      s.append( root.info.toString());
+    } else if (level > 1) {
+      s.append( printThisLevel(root.lchild, level-1));
+      s.append( printThisLevel(root.rchild, level-1));
+    }
+    return s.toString();
+  }
 
 
   /////////////////////////////////////////////////////////
