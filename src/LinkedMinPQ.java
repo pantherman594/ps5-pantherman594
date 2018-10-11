@@ -33,14 +33,14 @@ public class LinkedMinPQ<T extends Comparable<T>> implements MinPQ<T> {
   //    is bigger than its children but smaller than its parent
 
   // 3. public void swim (Node d)
-  //    a method that will swim info up from down to a node where it
-  //    smaller than its parent and bigger than its children
+  //    a method that will swim info up from the bottom to a node
+  //    where it's smaller than its parent and bigger than its children
 
 
   // Freebie helper method you can call in toString().
-  // You do not *need* to use this method, but you can if you like.
+  // You do not need to use this method, but you can if you like.
   // This method will return a String listing the info in all the nodes
-  // in a level in a binary tree, from right to left.
+  // in a level in a binary tree, from left to right.
   // It is recursive: it calls itself in order to get the next level.
   String printThisLevel (Node root ,int level) {
     StringBuilder s = new StringBuilder();
