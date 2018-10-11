@@ -2,7 +2,7 @@
 
 ### Due Thursday, October 18 @ 11:59pm
 
-[Click here for an up-to-date version of this README](https://github.com/BC-CSCI-1102-F18-MW/ps5/README.md) 
+[Click here for an up-to-date version of this README](https://github.com/BC-CSCI-1102-F18-MW/ps5/blob/master/README.md) 
 
 ---
 ### SW 2.4.24 Minimum priority queue with explicit links
